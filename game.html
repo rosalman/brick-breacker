@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brick Breaker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="game-stats">
+            <div id="score">Score: <span id="score-value">0</span></div>
+            <div id="timer">Time: <span id="timer-value">00:00</span></div>
+            <div id="lives">Lives: <span id="lives-value">3</span></div>
+        </div>
+        <div id="game-area">
+            <div id="paddle"></div>
+            <div id="ball"></div>
+            <div id="start-menu" class="menu">
+                <h2>BRICK BREAKER</h2>
+                <p>Press 'S' to Start</p>
+                <p>Use ← → to move</p>
+            </div>
+            <div id="pause-menu" class="menu hidden">
+                <h2>PAUSED</h2>
+                <p>Press 'P' to Resume</p>
+                <p>Press 'R' to Restart</p>
+            </div>
+            <div id="game-over" class="menu hidden">
+                <h2>GAME OVER</h2>
+                <p>Score: <span class="final-score">0</span></p>
+                <p>Press 'R' to Restart</p>
+            </div>
+            <div id="win-screen" class="menu hidden">
+                <h2>YOU WIN!</h2>
+                <p>Score: <span class="final-score">0</span></p>
+                <p>Press 'R' to Play Again</p>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
